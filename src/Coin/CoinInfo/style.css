@@ -1,0 +1,20 @@
+.description h3,
+.description p {
+  color: var(--white) !important;
+  margin: 1rem 0;
+}
+.description p a {
+  text-decoration: underline;
+  color: var(--white);
+}
+.description p a:hover {
+  color: var(--blue);
+}
+
+.read {
+  cursor: pointer;
+}
+.read:hover {
+  color: var(--blue) !important;
+  width: fit-content;
+}

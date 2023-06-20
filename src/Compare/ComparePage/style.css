@@ -1,0 +1,17 @@
+.crypto-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .crypto-flex-box {
+    flex-flow: column;
+  }
+}
+
+/* .crypto1List {
+  margin-bottom: 1rem;
+} */

@@ -1,0 +1,165 @@
+.landing-info {
+  display: flex;
+}
+.info-track {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 60%;
+  margin-left: 5%;
+  gap: 40px;
+  /* border: 1px solid white; */
+  margin-top: 4rem;
+}
+
+.h-primary {
+  font-weight: 700;
+  font-size: 8rem;
+}
+.track {
+  color: white;
+}
+.real {
+  color: var(--blue);
+}
+
+.landing-btn {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.para {
+  color: var(--gray);
+}
+.mobile-img {
+  flex-basis: 30%;
+  /* border: 1px solid white; */
+  margin-top: 4rem;
+  margin-right: 5%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.mobile {
+  position: absolute;
+  z-index: 100;
+  height: 600px;
+}
+.gradient {
+  position: absolute;
+  height: 550px;
+  top: 100px;
+  left: 50px;
+}
+.track:hover {
+  -webkit-text-stroke: 2px var(--white);
+  color: var(--black);
+}
+
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 1250px) {
+  .h-primary {
+    font-size: 6.5rem;
+  }
+  .mobile {
+    height: 550px;
+  }
+  .gradient {
+    height: 500px;
+  }
+}
+/* -------------------------------------- */
+@media screen and (max-width: 1046px) {
+  .h-primary {
+    font-weight: 500;
+    font-size: 5.5rem;
+  }
+  .gradient {
+    height: 410px;
+  }
+  .mobile {
+    height: 450px;
+  }
+}
+/* -------------------------------------- */
+@media screen and (max-width: 800px) {
+  .landing-info {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    gap: 50px;
+  }
+  .mobile-img {
+    flex-basis: unset;
+    margin: auto;
+  }
+  .info-track {
+    flex-basis: unset;
+    margin: auto;
+  }
+  .h-primary {
+    font-weight: 600;
+    font-size: 6rem;
+  }
+  .landing-btn {
+    justify-content: space-evenly;
+  }
+  .mobile {
+    height: 600px;
+    left: -216px;
+  }
+  .gradient {
+    height: 550px;
+    top: 100px;
+    left: -130px;
+  }
+}
+
+/* -------------------------------------- */
+@media screen and (max-width: 627px) {
+  .info-track {
+    padding: 2px 3%;
+  }
+  .h-primary {
+    font-weight: 500;
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .info-track {
+    padding: 2px 3%;
+  }
+  .h-primary {
+    font-weight: 500;
+    font-size: 3.5rem;
+  }
+  .mobile {
+    left: -150px;
+    height: 420px;
+  }
+  .gradient {
+    height: 407px;
+    top: 38px;
+    left: -130px;
+  }
+}
+
+/* custom scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2230cc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1780e9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5aac20;
+}

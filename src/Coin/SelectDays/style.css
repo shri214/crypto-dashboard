@@ -1,0 +1,8 @@
+.selectionOfDays {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--white);
+  gap: 1rem;
+  margin: 1rem 0rem;
+}

@@ -1,0 +1,19 @@
+.coin-details,
+.description {
+  width: 90%;
+  margin: auto;
+  display: block;
+  padding: 0.8rem 0rem;
+  margin-bottom: 1rem;
+}
+
+.description,
+.back {
+  background-color: var(--darkGray);
+  padding: 14px 10px;
+  border-radius: 5px;
+}
+
+.des {
+  color: var(--white);
+}

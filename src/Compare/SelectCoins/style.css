@@ -1,0 +1,20 @@
+.crypto-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin: 1.5rem;
+}
+.crypto-flex p {
+  color: var(--white);
+}
+
+@media only screen and (max-width: 600px) {
+  .crypto-flex {
+    justify-content: space-between !important;
+    width: 80%;
+  }
+  .nameOfCrypto {
+    display: none;
+  }
+}
