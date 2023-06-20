@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/crypto-dashboard/static/css/main.4058f144.css",
+    "main.js": "/crypto-dashboard/static/js/main.d364e6ed.js",
+    "static/media/_iphone_compare_full-p-500-removebg-preview.png": "/crypto-dashboard/static/media/605adb9070e57ab3ab4994e0_iphone_compare_full-p-500-removebg-preview.38152ea2532310f19c3c.png",
+    "static/media/gradient.-removebg-preview.png": "/crypto-dashboard/static/media/gradient.12a666ed10b3b442b534-removebg-preview.399eff75e67556883c32.png",
+    "index.html": "/crypto-dashboard/index.html",
+    "main.4058f144.css.map": "/crypto-dashboard/static/css/main.4058f144.css.map",
+    "main.d364e6ed.js.map": "/crypto-dashboard/static/js/main.d364e6ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4058f144.css",
+    "static/js/main.d364e6ed.js"
+  ]
+}
