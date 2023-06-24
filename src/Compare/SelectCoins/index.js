@@ -7,7 +7,7 @@ import { fetchData } from "../../Component/Dashboard/redux/action/actionCreation
 import "./style.css";
 
 export default function SelectCoins({ crypto1, crypto2, handleCoinChange }) {
-  let { loading, data, error } = useSelector((state) => state);
+  let { loading, data, error } = useSelector((state) => state.data);
   let dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchData());

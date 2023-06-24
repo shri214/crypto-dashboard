@@ -22,6 +22,7 @@
   flex-flow: row;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 .image-section img {
   height: 50px;
@@ -105,4 +106,32 @@
 
 .total {
   font-size: 15px;
+}
+.upper-List {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.watchListG,
+.watchListR {
+  padding: 3px;
+  border-radius: 50%;
+}
+.watchListG {
+  border: 1px solid var(--green);
+  color: var(--green);
+}
+.watchListR {
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+
+/* disable image draggable */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
 }

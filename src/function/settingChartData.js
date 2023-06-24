@@ -2,7 +2,7 @@ import { convertDate } from "./convertDate";
 
 export const settingChartData = (setChartData, price1, price2) => {
   console.log("setting chart data is ", price1, price2);
-  if (price2 != undefined) {
+  if (price2) {
     setChartData({
       labels: price1.map((price) => convertDate(price[0])),
       datasets: [

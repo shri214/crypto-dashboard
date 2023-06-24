@@ -11,6 +11,8 @@ import List from "./List/List";
 import PaginationControlled from "./Pagination/Pagination";
 import Loader from "../Loader";
 import BackToTop from "../BackToTop/BackToTop";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function LabTabs({ searchValue }) {
   const [value, setValue] = useState("Grid");
@@ -18,7 +20,7 @@ export default function LabTabs({ searchValue }) {
   const [prev, setPrev] = useState(0);
   const [next, setNext] = useState(10);
 
-  let { loading, data, error } = useSelector((state) => state);
+  let { loading, data, error } = useSelector((state) => state.data);
   let dispatch = useDispatch();
 
   useEffect(() => {
@@ -61,6 +63,7 @@ export default function LabTabs({ searchValue }) {
 
   return (
     <>
+      <ToastContainer />
       <BackToTop />
       <ThemeProvider theme={themes}>
         <TabContext value={value}>

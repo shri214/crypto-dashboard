@@ -78,46 +78,15 @@ const ComparePage = () => {
   const handelPriceTypeChange = async (event, newType) => {
     setLoader(true);
     setPriceType(newType);
-    const price1 = await getCoin(crypto1, days, newType);
-    const price2 = await getCoin(crypto2, days, newType);
+    const price1 = await getPrice(crypto1, days, newType);
+    const price2 = await getPrice(crypto2, days, newType);
     if (price1.length > 0 && price2.length > 0) {
       settingChartData(setChartData, price1, price2);
+      console.log(chartData);
+      setLoader(false);
     }
-    setLoader(false);
   };
 
-  //   if (isCrypto2) {
-  //     setLoader(true);
-  //     setCrypto2(event.target.value);
-
-  //     let data = await getCoin(event.target.value);
-  //     if (data) {
-  //       coinObject(setCrypto2Data, data);
-  //       // console.log("data", crypto2Data);
-  //       let prices = await getPrice(event.target.value, days, priceType);
-  //       if (prices.length > 0) {
-  //         // settingChartData(setChartData, prices);
-  //         console.log("woo done");
-  //         setLoader(false);
-  //       }
-  //     }
-  //   } else {
-  //     setLoader(true);
-  //     setCrypto1(event.target.value);
-  //     let data = await getCoin(event.target.value);
-  //     if (data) {
-  //       coinObject(setCrypto1Data, data);
-  //       // console.log("data", crypto2Data);
-  //       let prices = await getPrice(event.target.value, days, priceType);
-  //       if (prices.length > 0) {
-  //         settingChartData(setChartData, prices);
-  //         // console.log("chart data is", chartData);
-  //         // console.log("woo done");
-  //         setLoader(false);
-  //       }
-  //     }
-  //   }
-  // };
   return (
     <>
       <div className="crypto-flex-box">

@@ -4,16 +4,18 @@ import Dashboard from "./Component/Dashboard";
 import LandingPage from "./Component/LandingPage/LandingPage";
 import CoinPage from "./Component/DetailCoin/CoinPage";
 import ComparePage from "./Compare/ComparePage/Compare";
+import WatchList from "./Component/WatchList";
 
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/crypto-dashboard" element={<LandingPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/coin/:id" element={<CoinPage />} />
         <Route path="/compare" element={<ComparePage />} />
+        <Route path="/watch" element={<WatchList />} />
       </Routes>
     </>
   );

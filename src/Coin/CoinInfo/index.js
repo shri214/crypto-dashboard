@@ -9,7 +9,9 @@ const CoinInfo = ({ header, desc }) => {
   return (
     <div className="description">
       <h3>{header}</h3>
-      {flag ? (
+      {!desc ? (
+        <p style={{ color: "var(--white)" }}>Description is not available...</p>
+      ) : flag ? (
         <p
           dangerouslySetInnerHTML={{ __html: shortDesc }}
           onClick={() => setFlag(!flag)}

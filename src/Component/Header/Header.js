@@ -3,22 +3,25 @@ import { useNavigate } from "react-router-dom";
 import "./header.css";
 import TemporaryDrawer from "./Drawer";
 import Button from "../Button/index";
-import BasicSwitches from "./switch";
+// import BasicSwitches from "./switch";
 const Header = () => {
   const navigation = useNavigate();
   return (
     <>
       <div className="navbar">
-        <NavLink to="/" className="items">
+        <NavLink to="/crypto-dashboard" className="items">
           CryptoTracker<span style={{ color: "var(--blue)" }}>.</span>
         </NavLink>
         <div className="list">
           {/* <BasicSwitches /> */}
-          <NavLink to="/" className="item">
+          <NavLink to="/crypto-dashboard" className="item">
             Home
           </NavLink>
           <NavLink to="/compare" className="item">
             Compare
+          </NavLink>
+          <NavLink to="/watch" className="item">
+            WatchList
           </NavLink>
           <Button
             clName={"dash"}
